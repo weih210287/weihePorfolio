@@ -1,0 +1,109 @@
+body{
+	margin: 0;
+	padding: 0;
+	cursor: url(../image/eyes.png), auto;
+/*	background-color: black;*/
+}
+
+body:active{
+	cursor: url(../image/eyes2.png), auto;
+}
+
+/* mouse over link */
+a:hover {
+  cursor: url(../image/eyesshine5.png), auto;
+}
+
+@font-face{
+	font-family: eurof35;
+	src: url("../font/eurof35.ttf")
+}
+
+ul {
+  list-style-type: none;
+  font-family: eurof35;
+  font-size: 20px;
+  padding: 0;
+  width: 6%;
+  top: 45%;
+  background-color: #555;
+  position: fixed;
+  height: 22.5%;
+  overflow: auto;
+  border-radius: 0 5px 5px 0;
+  z-index: 1;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #f1f1f1;
+  color: #000;
+  cursor: url(../image/eyesshine5.png), auto;
+}
+
+li a:hover:not(.active) {
+  background-color: #f1f1f1;
+  color: green;
+  cursor: url(../image/eyesshine5.png), auto;
+}
+
+p{
+	font-family: eurof35;
+	font-size: 20px;
+	text-shadow: 1px 1px 2px #8f8c8c;
+}
+
+.container{
+	position: relative;
+	width: 1200px;
+  height: 1000px;
+	margin: auto;
+	margin-top: 30px;
+	padding: 50px;
+  background-color: #e5e5e5;
+}
+
+h1{
+	  text-align: center;
+}
+
+.content {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 50%;
+  right: 10px;
+  margin-right: 50px;
+  top: 20px;
+  padding: 20px;
+}
+
+.gframe {
+  margin-left: 100px;
+}
+
+#posterpo1-1 {
+  position: relative;
+  margin-top:　50px;
+}
+
+div.gallery {
+  margin: 20px;
+  border: 1px solid #ccc;
+  width: 350px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}

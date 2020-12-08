@@ -1,0 +1,357 @@
+body{
+	margin: 0;
+	padding: 0;
+	cursor: url(../image/eyes.png), auto;
+/*	background-color: black;*/
+}
+
+body:active{
+	cursor: url(../image/eyes2.png), auto;
+}
+
+@font-face{
+	font-family: eurof35;
+	src: url("../font/eurof35.ttf");
+}
+
+.musicbar{
+	width: 300px;
+	height: 50px;
+	margin: auto;
+	margin-top: -30px;
+	padding: 10px;
+	top: 10px;
+	cursor: url(../image/r2.png), auto;
+}
+
+ul {
+  list-style-type: none;
+  font-family: eurof35;
+  font-size: 22px;
+  padding: 0;
+  width: 10%;
+  height: 25%;
+  background-color: #6f6f6f;
+  position: fixed;  
+  overflow: auto;
+  border-radius: 0 5px 5px 0;
+  z-index: 1;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #f1f1f1;
+  color: #000;
+  cursor: url(../image/eyesshine5.png), auto;
+}
+
+li a:hover:not(.active) {
+  background-color: #f1f1f1;
+  color: green;
+  cursor: url(../image/eyesshine5.png), auto;
+}
+
+header{
+	height: 350px;
+	background-image: url(../image/bg5.jpg);
+	background-color: #7a7a7a;
+	position: relative;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: black;
+  text-decoration: none;
+} 
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .3s ease;
+  cursor: url(../image/eyesshine4.png), auto;
+
+}
+
+.overlay h1{
+	color: white;
+	text-shadow: 0 0 2px #e91afc, 0 0 2px #1a24fc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.overlay img{
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  height: 95%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+	position: absolute;
+    bottom: -15px;
+    right: 30px;
+    background-color: black;
+    color: white;
+    padding: 0 50px 10px 20px;
+	font-family: eurof35;
+	font-size: 60px;
+/*	background-color: #faefa5;*/
+}
+
+.container{
+	width: 786px;
+	height: 5000px;
+	margin: auto;
+	/*margin-top: 30px;*/
+    background-image: url(../image/3.png);
+    background-color: #e5e5e5;
+    background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+.row h1{
+	font-style: oblique;
+	font-variant: small-caps;
+}
+
+.row img{
+	display: block;
+	border: 3px solid #7f7f7f;
+	border-radius: 2em 1em 4em / 0.5em 3em;
+	box-shadow: 10px 10px 10px #7f7f7f;
+
+}
+
+
+/* Create three equal columns that sits next to each other */
+
+.column {
+  flex: 40%;
+  padding: 6.6px;
+}
+
+.column2 {
+  flex: 40%;
+  padding: 6.6px;
+  margin-left: 100px;
+}
+
+#position1-1 {
+  position: relative;
+  margin-top: 80px;
+  margin-left: 30px;
+  -ms-transform: rotate(15deg); /* IE 9 */
+  -webkit-transform: rotate(15deg); /* Safari */
+  transform: rotate(15deg);
+  /*background-color: red;*/
+}
+
+#position1-1:hover .overlay{
+  opacity: 1;
+  width: 90%;
+  height: 90%;
+
+}
+
+#position1 {
+  margin-top: 200px;
+  margin-left: -90px;
+  -ms-transform: rotate(-15deg); /* IE 9 */
+  -webkit-transform: rotate(-15deg); /* Safari */
+  transform: rotate(-15deg);
+  /*background-color: red;*/
+}
+
+#position1:hover .overlay{
+  opacity: 1;
+
+}
+
+#position2 {
+	margin-left: -130px;
+	margin-top: 150px;
+	/*background-color: red;*/
+	-ms-transform: rotate(15deg); /* IE 9 */
+	-webkit-transform: rotate(15deg); /* Safari */
+	transform: rotate(15deg);
+}
+
+#position2:hover .overlay{
+  opacity: 1;
+
+}
+
+
+#position3 {
+	padding-left: 20px;
+	margin-top: 140px;
+	margin-left: 30px;
+	/*background-color: red;*/
+	-ms-transform: rotate(-5deg); /* IE 9 */
+	-webkit-transform: rotate(-5deg); /* Safari */
+	transform: rotate(-5deg);
+}
+
+#position3:hover .overlay{
+  opacity: 1;
+
+}
+
+#position4 {
+	margin-top: 200px;
+	/*background-color: red;*/
+	-ms-transform: rotate(8deg); /* IE 9 */
+	-webkit-transform: rotate(8deg); /* Safari */
+	transform: rotate(8deg);
+}
+
+#position4:hover .overlay{
+  opacity: 1;
+
+}
+
+#position5 {
+	position: relative;
+  	padding: 10px;
+  	margin-top: 55px;
+	/*background-color: red;*/
+	-ms-transform: rotate(8deg); /* IE 9 */
+	-webkit-transform: rotate(8deg); /* Safari */
+	transform: rotate(8deg);
+}
+
+#position5:hover .overlay{
+  opacity: 1;
+
+}
+
+#position1b-1 {
+	margin-top: 180px;
+	margin-left: 100px;
+	width: 120%;
+	/*background-color: red;*/
+    -ms-transform: rotate(-10deg); /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Safari */
+	transform: rotate(-10deg);
+}
+
+#position1b-1:hover .overlay{
+  opacity: 1;
+
+}
+
+#position1b {
+	margin-top: 130px;
+	margin-left: 100px;
+	width: 80%;
+	/*background-color: red;*/
+    -ms-transform: rotate(8deg); /* IE 9 */
+    -webkit-transform: rotate(8deg); /* Safari */
+	transform: rotate(8deg);
+
+}
+
+#position1b:hover .overlay{
+  opacity: 1;
+
+}
+
+#position2b {
+	margin-top: 180px;
+	margin-left: 100px;
+	width: 120%;
+	/*background-color: red;*/
+    -ms-transform: rotate(-3deg); /* IE 9 */
+    -webkit-transform: rotate(-3deg); /* Safari */
+	transform: rotate(-3deg);
+}
+
+#position2b:hover .overlay{
+  opacity: 1;
+
+}
+
+#position3b {
+	margin-top: 200px;
+	margin-left: 20px;
+	/*background-color: red;*/
+    -ms-transform: rotate(10deg); /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Safari */
+	transform: rotate(10deg);
+}
+
+#position3b:hover .overlay{
+  opacity: 1;
+
+}
+
+#position4b {
+	margin-top: 200px;
+	margin-left: 100px;
+	/*background-color: red;*/
+	-ms-transform: rotate(-15deg); /* IE 9 */
+    -webkit-transform: rotate(-15deg); /* Safari */
+	transform: rotate(-15deg);
+}
+
+#position4b:hover .overlay{
+  opacity: 1;
+
+}
+
+#position5b {
+	margin-top: 200px;
+	margin-left: 20px;
+	/*background-color: red;*/
+	-ms-transform: rotate(-15deg); /* IE 9 */
+    -webkit-transform: rotate(-15deg); /* Safari */
+	transform: rotate(-15deg);
+}
+
+#position5b:hover .overlay{
+  opacity: 1;
+
+}
